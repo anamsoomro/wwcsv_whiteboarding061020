@@ -2,24 +2,35 @@
 
 # Value = 80 Return True
 # value = 75, Return False
-# 0  1  2   3  4   5  6   7    8
-arr = [5, 9, 17, 23,70, 80 90, 100, 150]
-num = 75
+#      0  1   2   3  4   5    6   7    8
+arr = [5, 9, 17, 23, 70, 80, 90, 100, 150]
+num = 74
 
 def binary_search(arr, num)
 
-  first = 0
-  last = arr.length - 1
-  mid = (first + last) / 2 
+  first = 0 # 0
+  last = arr.length - 1 # 8
 
-  while first <= last 
-    if (arr[mid])
-      
+  while first <= last # 0 <= 8 
+
+    mid = (first + last) / 2 # 4
+
+    if arr[mid] == num # false
+      return true
+    elsif (arr[mid] > num ) # 70 > 80 false
+      last = mid - 1 
+    else 
+      first = mid + 1 # first = 5
     end
+
   end
 
+  return false
 
 end
+
+
+print binary_search(arr, num)
 
 
 
