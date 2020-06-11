@@ -35,24 +35,3 @@ print binary_search(arr, num)
 
 
 
-
-
-# Public boolean binarySearch(int[] arr, int val){
-# int mid, start, end;
-# start = 0; 
-# end = arr.length-1; 8
-
-# while(start<=end){
-# mid = start+end/2;
-# if(arr[mid] == val)
-# return true;
-# else if(arr[mid]>val){
-# end = mid-1;
-# }
-# else{
-# start= mid+1;
-# }
-# }
-# return false;
-
-
